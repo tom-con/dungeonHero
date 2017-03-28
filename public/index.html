@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Main</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/app.js">
+  </script>
+
+</head>
+
+<body class="">
+  <div class="row"></div>
+
+
+  <div id="drawCont">
+    <div class="row center">
+      <div class="col m9">
+        <div id="drawBox"></div>
+        <div class="row">
+          <button id="drawBtn" class="btn deep-orange accent-4 col m3 offset-m2">Save As...</button>
+          <select id="canvasSelect" class="col m5">
+            <option value="Front">Front view</option>
+            <option value="Back">Back view</option>
+            <option value="Left">Left view</option>
+            <option value="Right">Right view</option>
+          </select>
+        </div>
+        <div class="row">
+          <input id="picker" type="color" class="">
+          <button id="colorBtn" class="btn deep-orange accent-4">Apply this Color</button>
+        </div>
+        <div class="row">
+          <button id="clearBtn" class="btn deep-orange accent-4">Clear Current</button>
+        </div>
+      </div>
+      <div id="rendered" class="col m3">
+
+        <div>
+          <label class="row">Front view</label>
+          <canvas id="canvasFront" height="192" width="192"></canvas>
+        </div>
+        <div>
+          <label class="row">Back view</label>
+          <canvas id="canvasBack" height="192" width="192"></canvas>
+        </div>
+
+
+        <div>
+          <label class="row">Left view</label>
+          <canvas id="canvasLeft" height="192" width="192"></canvas>
+        </div>
+        <div>
+          <label class="row">Right view</label>
+          <canvas id="canvasRight" height="192" width="192"></canvas>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>

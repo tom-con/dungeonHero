@@ -1,0 +1,22 @@
+.pixel {
+  display: inline-block;
+  border-collapse: collapse;
+  border: 1px dotted rgb(181, 181, 181);
+  width: 12px;
+  height: 12px;
+}
+
+.pixelRow {
+  line-height: 0;
+  display: block;
+}
+
+#drawBox {
+  background-image: url('../img/char.png');
+  width: 768px;
+}
+
+canvas {
+  background-color: #eee;
+  border: 1px solid black;
+}
